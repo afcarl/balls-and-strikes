@@ -1,0 +1,17 @@
+---
+
+- name: ensure supervisor config dir exists
+  sudo: yes
+  file:
+    path: /etc/supervisor/conf.d/
+    state: directory
+  tags:
+    - sv-bootstrap
+
+- name: ensure supervisor log dir exists
+  sudo: yes
+  file:
+    path: /var/log/supervisor/
+    state: directory
+  tags:
+    - sv-bootstrap

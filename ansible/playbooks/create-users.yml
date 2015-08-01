@@ -1,0 +1,8 @@
+---
+
+# creates users on machine(s)
+
+- hosts: deploy
+  gather_facts: no
+  roles:
+    - users

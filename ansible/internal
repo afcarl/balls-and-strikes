@@ -1,0 +1,6 @@
+[internal]
+192.168.0.101   ansible_ssh_user=vagrant
+
+[internal:vars]
+user=vagrant
+git_branch=develop

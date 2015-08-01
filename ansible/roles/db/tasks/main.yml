@@ -1,0 +1,26 @@
+---
+
+# - name: install postgres
+#   action: apt pkg="{{ item }}" state=latest update_cache=yes
+#   with_items:
+#     - postgresql-client
+#     - postgresql-server-dev-9.3
+#     - postgresql
+#     - libpq-dev
+#   sudo: yes
+#   tags:
+#     - db-bootstrap
+
+- name: create database
+  postgresql_db: name={{ project_name }}
+  sudo: yes
+  sudo_user: postgres
+  tags:
+    - db-bootstrap
+
+- name: create user
+  postgresql_user: db={{ project_name}} name={{ user }} state=present priv=ALL
+  sudo: yes
+  sudo_user: postgres
+  tags:
+    - db-bootstrap

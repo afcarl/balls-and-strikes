@@ -1,0 +1,9 @@
+---
+
+- hosts: internal
+  gather_facts: no
+  roles:
+    - common
+    - supervisor
+    - nginx
+    - www

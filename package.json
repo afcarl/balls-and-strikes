@@ -1,0 +1,37 @@
+{
+  "name": "ballsandstrikes",
+  "version": "0.0.1",
+  "description": "Interlinked research archive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:mattdennewitz/balls-and-strikes.git"
+  },
+  "keywords": [
+    "baseball"
+  ],
+  "author": "Matt dennewitz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattdennewitz/balls-and-strikes/issues"
+  },
+  "homepage": "https://github.com/mattdennewitz/balls-and-strikes",
+  "dependencies": {
+    "browserify": "^7.0.3",
+    "del": "^1.1.0",
+    "events": "^1.0.2",
+    "flux": "^2.0.1",
+    "gulp": "^3.8.10",
+    "gulp-sass": "^1.2.4",
+    "object-assign": "^2.0.0",
+    "react": "^0.12.2",
+    "react-tools": "^0.12.2",
+    "reactify": "^0.17.1",
+    "strftime": "^0.8.2",
+    "underscore": "^1.7.0",
+    "vinyl-source-stream": "^1.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+---
+
+- name: replace www-data user
+  sudo: yes
+  lineinfile: dest="/etc/nginx/nginx.conf" regexp="^user " line="user {{ user }};"
+  notify:
+    - restart nginx
+  tags:
+    - nginx-bootstrap
+
+- name: delete "default" configuration
+  sudo: yes
+  file: name="/etc/nginx/sites-enabled/default" state=absent
+  notify:
+    - reload nginx
+  tags:
+    - nginx-bootstrap

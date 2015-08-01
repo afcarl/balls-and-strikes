@@ -1,0 +1,41 @@
+---
+
+# base machine setup
+
+- name: ensure packages are installed
+  sudo: yes
+  action: apt pkg="{{ item }}" state=latest update_cache=yes
+  with_items:
+    - build-essential
+    - git-core
+    - emacs
+    - nginx
+    - python-dev
+    - supervisor
+    - nodejs
+    - npm
+    - python-virtualenv
+    - ncurses-dev
+    - python-psycopg2
+  tags:
+    - machine-bootstrap
+
+- name: alias "nodejs" to "node" for npm compatibility
+  sudo: yes
+  shell: ln -sf /usr/bin/nodejs /usr/bin/node
+  tags:
+    - machine-bootstrap
+
+- name: increase soft ulimit
+  sudo: yes
+  lineinfile: dest="/etc/security/limits.conf" insertafter=EOF line="* soft nofile 65535"
+  tags:
+    - machine-bootstrap
+    - ulimit
+
+- name: increase hard ulimit
+  sudo: yes
+  lineinfile: dest="/etc/security/limits.conf" insertafter=EOF line="* hard nofile 65535"
+  tags:
+    - machine-bootstrap
+    - ulimit

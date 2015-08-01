@@ -1,0 +1,11 @@
+---
+
+# global group vars
+git_repo: git@github.com:mattdennewitz/balls-and-strikes.git
+git_branch: develop
+project_name: bs
+
+# project container path
+remote_project_dir: "/home/{{ user }}/{{ project_name }}"
+# site code path
+remote_app_dir: "{{ remote_project_dir}}/{{ project_name }}"
