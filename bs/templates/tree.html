@@ -1,0 +1,55 @@
+{# recursively iterates over root nodes, displays library tree #}
+
+{% for node in roots recursive %}
+    {% set children = node.get_children() %}
+    {% set resources = node.resources.live().order_by('id') %}
+
+    {% if not resources and not children %}
+        {% continue %}
+    {% endif %}
+
+    <div {% if node.is_root_node() %}class="three columns"{% endif %}>
+        <h{{ node.get_level() + 3 }}>{{ node }}</h{{ node.get_level() + 3 }}>
+
+        {% if node.abstract %}
+            <p class="text">{{ node.abstract|safe }}</p>
+        {% endif %}
+
+        {% if resources %}
+            <ul>
+                {% for res in resources %}
+                    {% set suggestions = res.suggested_for.live() %}
+
+                    <li>
+                        <p>
+                            <a id="res-{{ res.id }}" href="{{ res.url }}"><strong>{{ res.title }}</strong></a> &mdash;
+                            {{ res.abstract|safe }}
+                        </p>
+
+                        {% if suggestions %}
+                            <div class="suggestions">
+                                <div class="text-center">
+                                    <small><em>See also...</em></small>
+                                </div>
+
+                                <ul class="related">
+                                    {% for res in suggestions %}
+                                        <li>
+                                            <a href="#res-{{ res.id }}">{{ res }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        {% if children %}
+            <ul>
+                {{ loop(children) }}
+            </ul>
+        {% endif %}
+    </div>
+{% endfor %}

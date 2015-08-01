@@ -1,0 +1,135 @@
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "freight-text-pro", "ff-tisa-web-pro", "Georgia", serif;
+  box-shadow: inset 0 2px 5px #ddd; }
+
+a {
+  color: #25a25a;
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    color: #2ecc71;
+    text-decoration: underline; }
+  a:visited {
+    color: #25a25a; }
+
+button:active {
+  box-shadow: inset 0 1px 5px #dedede;
+  text-shadow: 0 2px 2px #ccc; }
+
+nav {
+  padding: 12px 0; }
+
+header {
+  padding: 12px 0 24px; }
+  header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 12px 0; }
+  header h2 {
+    font-family: "freight-sans-pro", Helvetica, Arial;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 12px 0; }
+  header small {
+    color: #555; }
+  header .latest {
+    font-family: "freight-sans-pro", Helvetica, Arial;
+    font-weight: 500; }
+
+h1 {
+  font-weight: 800; }
+
+h2, h3, h4 {
+  font-weight: 700; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+  h4 a, h4 a:hover, h4 a:visited, h4 a:active, h4 a:focus {
+    color: #000;
+    cursor: pointer; }
+
+tt {
+  font-family: "Input Mono Condensed", "Menlo", "Inconsolata", mono; }
+
+ul {
+  list-style-type: none; }
+
+input, label {
+  font-family: "freight-sans-pro", Helvetica, Arial; }
+
+input {
+  font-weight: 600; }
+  input[name="q"] {
+    min-width: 200px;
+    margin-bottom: 6px;
+    text-align: center; }
+
+form {
+  font-size: 14px;
+  /* work with react's desire to wrap label content in <span> */ }
+  form label, form span {
+    font-weight: 800; }
+  form .form-wrap {
+    display: inline-block;
+    margin: 0 6px; }
+  form .checkbox span {
+    margin-left: 6px; }
+
+footer {
+  color: #999;
+  font-family: "freight-sans-pro", Helvetica, Arial;
+  font-size: 14px;
+  padding: 24px 0; }
+
+#app {
+  border-top: solid 2px #efefef; }
+
+#config {
+  padding: 24px 0; }
+
+.checkbox-inline {
+  font-family: "freight-sans-pro", Helvetica, Arial;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.container {
+  max-width: 1200px;
+  width: 90%; }
+
+.section-header, .resource {
+  margin: 24px 0; }
+
+.jump-links {
+  font-family: "freight-sans-pro", Helvetica, Arial; }
+
+.suggestions ul.related li {
+  font-family: "freight-sans-pro", Helvetica, Arial;
+  margin: 4px 0; }
+
+.by {
+  color: #777;
+  display: inline-block;
+  font-style: italic;
+  margin-left: 4px; }
+
+.text {
+  font-style: italic; }
+
+.text-center {
+  text-align: center; }
+
+.layout-controls em {
+  cursor: pointer;
+  color: #999; }
+  .layout-controls em.active {
+    box-shadow: inset 0 2px 5px #ddd; }

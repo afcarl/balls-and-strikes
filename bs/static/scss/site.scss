@@ -1,0 +1,207 @@
+@import "common";
+
+
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: $serif-face;
+    box-shadow: inset 0 2px 5px #ddd;
+}
+
+a {
+    color: $a-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $a-highlight-color;
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: $a-visited-color;
+    }
+}
+
+button {
+    &:active {
+        box-shadow: inset 0 1px 5px #dedede;
+        text-shadow: 0 2px 2px #ccc;
+    }
+}
+
+nav {
+    padding: $gutter 0;
+}
+
+header {
+    padding: $gutter 0 #{$gutter * 2};
+
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+        margin: $gutter 0;
+    }
+
+    h2 {
+        font: {
+            family: $sans-face;
+            size: 18px;
+            weight: 400;
+        }
+
+        margin: $gutter 0;
+    }
+
+    small {
+        color: #555;
+    }
+
+    .latest {
+        font-family: $sans-face;
+        font-weight: 500;
+    }
+}
+
+h1 {
+    font-weight: 800;
+}
+
+h2, h3, h4 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    a,
+    a:hover,
+    a:visited,
+    a:active,
+    a:focus {
+        color: #000;
+        cursor: pointer;
+    }
+}
+
+tt {
+    font-family: $mono-face;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input, label {
+    font-family: $sans-face;
+}
+
+input {
+    font-weight: 600;
+
+    &[name="q"] {
+        min-width: 200px;
+        margin-bottom: #{$gutter / 2};
+        text-align: center;
+    }
+}
+
+form {
+    font-size: 14px;
+
+    label, span {
+        font-weight: 800;
+    }
+
+    .form-wrap {
+        display: inline-block;
+        margin: 0 #{$gutter / 2};
+    }
+
+    /* work with react's desire to wrap label content in <span> */
+    .checkbox span {
+        margin-left: #{$gutter / 2};
+    }
+}
+
+footer {
+    color: #999;
+
+    font: {
+        family: $sans-face;
+        size: 14px;
+    }
+
+    padding: #{$gutter * 2} 0;
+}
+
+#app {
+    border-top: solid 2px #efefef;
+}
+
+#config {
+    padding: #{$gutter * 2} 0;
+}
+
+.checkbox-inline {
+    font-family: $sans-face;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+}
+
+.section-header,
+.resource {
+    margin: #{$gutter * 2} 0;
+}
+
+.jump-links {
+    font-family: $sans-face;
+}
+
+.suggestions {
+    ul.related li {
+        font-family: $sans-face;
+        margin: 4px 0;
+    }
+}
+
+.by {
+    color: #777;
+    display: inline-block;
+    font-style: italic;
+    margin-left: #{$gutter / 3};
+}
+
+.text {
+    font-style: italic;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.layout-controls em {
+    cursor: pointer;
+    color: #999;
+
+    &.active {
+        box-shadow: inset 0 2px 5px #ddd;
+    }
+}

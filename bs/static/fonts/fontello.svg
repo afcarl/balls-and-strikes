@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="th-1" unicode="&#xe800;" d="m0-150l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z m375-750l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z m375-750l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z" horiz-adv-x="1000" />
+<glyph glyph-name="align-justify" unicode="&#xe801;" d="m0-89l0 156 1000 0 0-156-1000 0z m0 240l0 156 1000 0 0-156-1000 0z m0 242l0 156 1000 0 0-156-1000 0z m0 240l0 157 1000 0 0-157-1000 0z" horiz-adv-x="1000" />
+<glyph glyph-name="th" unicode="&#xe802;" d="m160 660l0-161-160 0 0 161 160 0z m231 0l0-161-161 0 0 161 161 0z m-231-230l0-162-160 0 0 162 160 0z m231 0l0-162-161 0 0 162 161 0z m-231-230l0-160-160 0 0 160 160 0z m231 0l0-160-161 0 0 160 161 0z m229 460l0-161-161 0 0 161 161 0z m229 0l0-161-160 0 0 161 160 0z m-229-229l0-162-161 0 0 162 161 0z m0-231l0-160-161 0 0 160 161 0z m229 231l0-162-160 0 0 162 160 0z m0-228l0-163-160 0 0 163 160 0z" horiz-adv-x="849" />
+<glyph glyph-name="th-list" unicode="&#xe803;" d="m160 660l0-161-160 0 0 161 160 0z m0-230l0-162-160 0 0 162 160 0z m0-230l0-160-160 0 0 160 160 0z m641 406l0-81-533 0 0 81 533 0z m0-230l0-81-533 0 0 81 533 0z m0-217l0-81-533 0 0 81 533 0z" horiz-adv-x="801" />
+<glyph glyph-name="th-large" unicode="&#xe804;" d="m1000 850v-440h-440v440h440z m-320-320h200v200h-200v-200z m-240 320v-440h-440v440h440z m-320-320h200v200h-200v-200z m880-240v-440h-440v440h440z m-320-320h200v200h-200v-200z m-240 320v-440h-440v440h440z m-320-320h200v200h-200v-200z" horiz-adv-x="1000" />
+<glyph glyph-name="th-list-1" unicode="&#xe805;" d="m1000 850v-160h-1000v160h1000z m0-280v-160h-1000v160h1000z m0-280v-160h-1000v160h1000z m0-280v-160h-1000v160h1000z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
